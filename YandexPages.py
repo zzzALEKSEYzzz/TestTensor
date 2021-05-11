@@ -64,7 +64,7 @@ class SearchTensor(BasePage):
         return self.find_element(YandexSeacrhLocators.LOCATOR_FIRST_PICTURE).click()
 
     def continue_Open_Picture(self):
-        return self.find_element(YandexSeacrhLocators.LOCATOR_CONTINUE_PICTURE).get_attribute("src")
+        return self.find_element(YandexSeacrhLocators.LOCATOR_CONTINUE_PICTURE).get_attribute("currentSrc")
 
     def Next_Picture(self):
         self.find_element(YandexSeacrhLocators.LOCATOR_NEXT).click()
